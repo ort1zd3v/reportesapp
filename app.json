@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "Reporte Ciudadano",
+    "slug": "reporteciudadano",
+    "version": "4.1.5",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "@react-native-google-signin/google-signin"
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      [
+        "expo-apple-authentication"
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Esta aplicación requiere acceso a la cámara para leer documentos de identidad.",
+        "NSPhotoLibraryUsageDescription": "Esta aplicación requiere acceso a la galería para guardar las imágenes de los documentos de identidad."
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyD9As-GqbZc_taGYaxm-w5UkOMcmLtXxRM"
+      },
+      "bundleIdentifier": "com.copixil.ReporteCiudadano"
+    },
+    "newArchEnabled": false,
+    "android": {
+      "package": "com.copixil.ReporteCiudadano",
+      "versionCode": 19,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "INTERNET",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_LOCATION_EXTRA_COMMANDS",
+        "FOREGROUND_SERVICE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD9As-GqbZc_taGYaxm-w5UkOMcmLtXxRM"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c0c3b978-cd2a-45e9-b3f7-668d01a2d9b1"
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const apiUrlBase = 'https://reportesapp.cpxproject.com/api'
